@@ -145,7 +145,11 @@ Open **config/app.php** and add the service provider and alias:
 ```php	
     Amqp::publish('routing-key', 'message' , ['exchange' => 'amq.direct']);
 ```
+### Push bulk messages with routing key
 
+```php
+    Amqp::publish('routing-key', ['message1', 'message2', ......], a);
+```
 
 ## Consuming messages
 
