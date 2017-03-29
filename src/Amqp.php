@@ -28,6 +28,13 @@ class Amqp
 
         if (is_string($message)) {
             $message = new Message($message, ['content_type' => 'text/plain', 'delivery_mode' => 2]);
+            $publisher->publish($routing, $message);
+        }
+        elseif(is_array($message)){
+            foreach($message as $singleMessage){
+                $message = new Message($singleMessage, ['content_type' => 'text/plain', 'delivery_mode' => 2]);
+                $publisher->publish($routing, $message);
+            }
         }
 
         $publisher->publish($routing, $message);
