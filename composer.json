@@ -1,6 +1,6 @@
 {
-  "name": "bschmitt/laravel-amqp",
-  "description": "AMQP wrapper for Laravel and Lumen to publish and consume messages",
+  "name": "mmanazar/laravel-amqp",
+  "description": "AMQP wrapper for Laravel and Lumen to publish and consume messages in bulk",
   "keywords": [
     "laravel",
     "lumen",
@@ -10,8 +10,8 @@
     "queue",
     "package",
     "message queue",
-    "Björn Schmitt",
-    "bschmitt"
+    "mmanazar",
+    "bmanazar"
   ],
   "license": "MIT",
   "support": {
@@ -20,8 +20,8 @@
   },
   "authors": [
     {
-      "name": "Björn Schmitt",
-      "email": "code@bjoern.io"
+      "name": "Muhammad Ben Manazar",
+      "email": "mmanazar@gmail.com"
     }
   ],
   "require": {
